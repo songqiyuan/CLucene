@@ -17,6 +17,8 @@
 三、测试
 
 1.cd到src/test目录下，执行：make cl_test，则会在bin/目录下产生一个cl_test执行文件，在bin目录下输入./cl_test
+ 这一过程会遇到“‘usleep’ was not declared in this scope”的错误，在TestIndexSerach.cpp 中添加“ #include <unistd.h>” 文件
+ （https://blog.csdn.net/qq_37788081/article/details/85000361）
 
 2.cd到src/demo目录下，执行：make cl_demo，也会在bin/目录下产生一个cl_demo执行文件，同上
 
